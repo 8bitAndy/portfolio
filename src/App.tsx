@@ -6,6 +6,8 @@ import Navbar from './Navbar';
 import Banner from './Banner';
 import Footer from './Footer';
 import About from './About';
+import Contact from './Contact';
+import Projects from './Projects';
 
 
 // Will be used to display all of my work as a type
@@ -30,6 +32,9 @@ function App() {
       <Banner />
       <Navbar />
       <About />
+      <Contact />
+      {/* <Projects /> */}
+      <div className='Placeholder'/>
       <Footer />
     </div>
   );

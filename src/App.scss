@@ -1,6 +1,7 @@
 $base-font-color: #3a414e;
 $active-font-color: #ffffff;
 $white: #ffffff;
+$off-white: #f8f9fa;
 $ivory: #f6f7ebff;
 $green-blue-crayola: #0582caff;
 $green-blue-crayola-hover: rgb(12, 163, 250);
@@ -106,17 +107,16 @@ html::-webkit-scrollbar {
     a {
       color: $base-font-color;
     }
+
     a:hover {
       color: $green-blue-crayola;
     }
   }
 }
 
-.About-me {
+.About-me {}
 
-}
-
-.About-me-card{
+.About-me-card {
   margin: auto;
   position: relative;
   font-family: general-sans;
@@ -130,26 +130,26 @@ html::-webkit-scrollbar {
   margin-bottom: -25px;
   padding-bottom: 50px;
 
-  h2{
+  h2 {
     color: $green-blue-crayola;
     font-weight: 500;
     margin-top: 40px;
   }
 
-  .Content{
+  .Content {
     display: flex;
     flex-direction: column;
     gap: 25px;
     justify-content: center;
     margin: 50px 60px 0 60px;
 
-    p{
+    p {
       font-size: 1.25rem;
     }
   }
 }
 
-.Profile-image{
+.Profile-image {
   margin: auto;
   object-fit: fill;
   width: 30%;
@@ -171,6 +171,11 @@ html::-webkit-scrollbar {
   transition: 0.5s;
   border-radius: 2px;
 
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
   &:hover {
     background-color: $green-blue-crayola-hover;
     border-color: $green-blue-crayola-hover;
@@ -178,34 +183,75 @@ html::-webkit-scrollbar {
   }
 }
 
+.Placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: $white;
+}
+
+.Contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-family: general-sans;
+  width: 100%;
+  padding-bottom: 5%;
+  background-color: $off-white;
+}
+
+.Contact-content {
+  font-size: 1.25rem;
+  padding-top: 5%;
+  width: 55vw;
+
+  p {
+    width: 99%;
+    font-size: 1.3rem;
+  }
+}
+
+.Projects {
+  font-family: general-sans;
+  font-size: 1.5rem;
+  width: 100%;
+  padding-bottom: 30px;
+  background-color: $white;
+
+  h3{
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
 .Footer {
-  background-color: #f8f9fa;
+  background-color: $off-white;
   display: flex;
   justify-content: center;
   font-size: 1rem;
 }
 
-@media only screen and (max-width:1000px){
-  .Banner-text{
-
-      font-size: 1.35rem;
-
+@media only screen and (max-width:1000px) {
+  .Banner-text {
+    font-size: 1.35rem;
   }
 
-  .About-me-card{
+  .About-me-card {
     width: 80vw;
-  
-    h2{
+
+    h2 {
       color: $green-blue-crayola;
       font-weight: 500;
       margin-top: 40px;
     }
-  
-    .Content{
+
+    .Content {
 
       margin: 50px 20px 0 20px;
 
-      p{
+      p {
         font-size: 1.1rem;
       }
     }
@@ -213,28 +259,28 @@ html::-webkit-scrollbar {
 
   .Navbar {
     font-size: 0.8rem;
-  
+
     ul {
       gap: 30px;
     }
   }
 
-  .Profile-image{
+  .Profile-image {
     width: 30%;
   }
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:500px) {
   .Navbar {
     font-size: 0.75rem;
-  
+
     ul {
       justify-content: start;
       gap: 25px;
     }
   }
 
-  .Profile-image{
+  .Profile-image {
     width: 60%;
   }
 }
