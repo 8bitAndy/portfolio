@@ -48,12 +48,13 @@ html::-webkit-scrollbar {
   font-family: general-sans;
   color: $active-font-color;
   position: absolute;
-  top: 200px;
+  top: 150px;
   margin: auto;
   width: 100%;
   line-height: 1;
 
   p {
+    padding: 0 50px 0 50px;
     color: #ccd5df;
   }
 }
@@ -74,6 +75,7 @@ html::-webkit-scrollbar {
   position: fixed;
   width: 100%;
   border-bottom: 1px solid grey;
+  z-index: 1;
 
   ul {
     display: flex;
@@ -110,13 +112,51 @@ html::-webkit-scrollbar {
   }
 }
 
-.next {
+.About-me {
+
+}
+
+.About-me-card{
   margin: auto;
+  position: relative;
+  font-family: general-sans;
+  top: -75px;
   text-align: center;
-  width: 60%;
+  width: 55vw;
   background-color: $white;
   border: 2px solid #eef0f3;
-  height: 1200px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  // Negative margin used to change the gap between the component below this one
+  margin-bottom: -25px;
+  padding-bottom: 50px;
+
+  h2{
+    color: $green-blue-crayola;
+    font-weight: 500;
+    margin-top: 40px;
+  }
+
+  .Content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    margin: 50px 60px 0 60px;
+
+    p{
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.Profile-image{
+  margin: auto;
+  object-fit: fill;
+  width: 30%;
+  height: 50%;
+  border-radius: 50%;
+  border: #ffffff solid 3px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .Button-general {
@@ -139,7 +179,62 @@ html::-webkit-scrollbar {
 }
 
 .Footer {
+  background-color: #f8f9fa;
   display: flex;
   justify-content: center;
   font-size: 1rem;
+}
+
+@media only screen and (max-width:1000px){
+  .Banner-text{
+
+      font-size: 1.35rem;
+
+  }
+
+  .About-me-card{
+    width: 80vw;
+  
+    h2{
+      color: $green-blue-crayola;
+      font-weight: 500;
+      margin-top: 40px;
+    }
+  
+    .Content{
+
+      margin: 50px 20px 0 20px;
+
+      p{
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .Navbar {
+    font-size: 0.8rem;
+  
+    ul {
+      gap: 30px;
+    }
+  }
+
+  .Profile-image{
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .Navbar {
+    font-size: 0.75rem;
+  
+    ul {
+      justify-content: start;
+      gap: 25px;
+    }
+  }
+
+  .Profile-image{
+    width: 60%;
+  }
 }

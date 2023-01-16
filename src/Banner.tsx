@@ -8,13 +8,13 @@ const test : string = "test"
 export default function Banner() {
     return (
         <>
-            <img src={image} className='Banner-image' />
+            <img src={image} alt='A banner of a Broome coastline' className='Banner-image' />
             <div className='Banner-text'>
                 <h1>Liam Andrews</h1>
                 <h3>Software Developer</h3>
                 <p>I develop software of all kinds, have a look at some of my work below</p>
                 <br/>
-                <button id='about-me' className='Button-general'>Get in contact</button>
+                <button id='about-me' className='Button-general'>Get in touch</button>
             </div>
         </>
     )

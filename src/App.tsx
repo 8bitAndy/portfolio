@@ -5,6 +5,7 @@ import './App.scss';
 import Navbar from './Navbar';
 import Banner from './Banner';
 import Footer from './Footer';
+import About from './About';
 
 
 // Will be used to display all of my work as a type
@@ -23,17 +24,12 @@ const project: portfolioItem = {
   id: 1
 };
 
-const testData: string = "My name's Liam I'm a software developer";
-
-
 function App() {
   return (
     <div className="App">
       <Banner />
       <Navbar />
-      <div id="next" className='next'>
-        <h2>About me</h2>
-      </div>
+      <About />
       <Footer />
     </div>
   );
