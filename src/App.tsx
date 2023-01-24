@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 
 import './App.scss';
@@ -8,6 +8,7 @@ import Footer from './Footer';
 import About from './About';
 import Contact from './Contact';
 import Projects from './Projects';
+import content from './data/site-content.json'
 
 
 // Will be used to display all of my work as a type
@@ -27,14 +28,15 @@ const project: portfolioItem = {
 };
 
 function App() {
+
   return (
     <div className="App">
-      <Banner />
+      <Banner title={content.banner.title} intro={content.banner.intro} />
       <Navbar />
       <About />
       <Contact />
       {/* <Projects /> */}
-      <div className='Placeholder'/>
+      {/* <div className='Placeholder'/> */}
       <Footer />
     </div>
   );

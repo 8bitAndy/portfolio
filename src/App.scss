@@ -114,7 +114,7 @@ html::-webkit-scrollbar {
   }
 }
 
-.About-me {}
+// .About-me {}
 
 .About-me-card {
   margin: auto;
@@ -155,7 +155,7 @@ html::-webkit-scrollbar {
   width: 30%;
   height: 50%;
   border-radius: 50%;
-  border: #ffffff solid 3px;
+  border: #ffffff solid 1px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
@@ -224,6 +224,39 @@ html::-webkit-scrollbar {
   p {
     font-size: 1.2rem;
   }
+}
+
+.Project-content{
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  margin: auto;
+  gap: 20%;
+}
+
+.arrow {
+  border: solid $base-font-color;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+
+  &:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    border-color: $green-blue-crayola;
+  }
+}
+
+.left{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 .Footer {

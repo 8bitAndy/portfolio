@@ -1,20 +1,18 @@
 import image from './banner.jpg';
 import App from './App';
 
-const test : string = "test"
-
 
 // Banner image with header text and a brief bio
-export default function Banner() {
+export default function Banner({title, intro} : any) {
     return (
         <>
             <img src={image} alt='A banner of a Broome coastline' className='Banner-image' />
             <div className='Banner-text'>
                 <h1>Liam Andrews</h1>
-                <h3>Software Developer</h3>
-                <p>I develop software of all kinds, have a look at some of my work below</p>
+                <h3>{title}</h3>
+                <p>{intro}</p>
                 <br/>
-                <button id='about-me' className='Button-general'>Get in touch</button>
+                <button id='about-me' className='Button-general'><a href="mailto:liamcandrews@outlook.com?subject=Let's get in touch!">Get in touch</a></button>
             </div>
         </>
     )
