@@ -3,7 +3,7 @@ import App from './App';
 
 
 // Banner image with header text and a brief bio
-export default function Banner({title, intro} : any) {
+export default function Banner({ title, intro }: any) {
     return (
         <>
             <img src={image} alt='A banner of a Broome coastline' className='Banner-image' />
@@ -11,8 +11,8 @@ export default function Banner({title, intro} : any) {
                 <h1>Liam Andrews</h1>
                 <h3>{title}</h3>
                 <p>{intro}</p>
-                <br/>
-                <button id='about-me' className='Button-general'><a href="mailto:liamcandrews@outlook.com?subject=Let's get in touch!">Get in touch</a></button>
+                <br />
+                <a href="#contact"><button id='about-me' className='Button-general'>Get in touch</button></a>
             </div>
         </>
     )

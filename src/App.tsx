@@ -34,7 +34,7 @@ function App() {
       <Banner title={content.banner.title} intro={content.banner.intro} />
       <Navbar />
       <About />
-      <Contact />
+      <Contact liLink={content.contact.liLink} mailLink={content.contact.mailLink} ghLink={content.contact.ghLink}/>
       {/* <Projects /> */}
       {/* <div className='Placeholder'/> */}
       <Footer />
