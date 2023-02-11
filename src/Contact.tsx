@@ -11,7 +11,7 @@ export default function Contact({ liLink, mailLink, ghLink }: any) {
                 <a href={process.env.PUBLIC_URL + '/SoftwareResume.pdf'} download><button id='my-portfolio' className='Button-general'>Download resume</button></a>
                 <br />
                 <br />
-                <h3 id='contact'>Get in touch with one of the below</h3>
+                <h3 id='contact'>Contact me with one of the below</h3>
                 <a href={liLink} target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" className="linkLogo" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -22,7 +22,7 @@ export default function Contact({ liLink, mailLink, ghLink }: any) {
                         <path d="M16 16v-3a2 2 0 0 0 -4 0" />
                     </svg>
                 </a>
-                <a href={"mailto:" + mailLink} target="_blank">
+                <a href={"mailto:" + mailLink + "?subject=Let's get in touch!"} target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" className="linkLogo" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <rect x="3" y="5" width="18" height="14" rx="2" />

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 
 import './App.scss';
@@ -34,9 +34,9 @@ function App() {
       <Banner title={content.banner.title} intro={content.banner.intro} />
       <Navbar />
       <About />
-      <Contact liLink={content.contact.liLink} mailLink={content.contact.mailLink} ghLink={content.contact.ghLink}/>
-      {/* <Projects /> */}
+      <Projects />
       {/* <div className='Placeholder'/> */}
+      <Contact liLink={content.contact.liLink} mailLink={content.contact.mailLink} ghLink={content.contact.ghLink} />
       <Footer />
     </div>
   );

@@ -24,7 +24,7 @@ export default function Navbar() {
                     <li><a href="#top">Top</a></li>
                     <li><a href="#about-me">About me</a></li>
                     <li><a href="#my-portfolio">My Portfolio</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
