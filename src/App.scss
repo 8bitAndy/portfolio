@@ -1,5 +1,9 @@
+// Font variables
 $base-font-color: #3a414e;
 $active-font-color: #ffffff;
+$font-weight-title: 500;
+
+// Backgrounds and theme colours
 $white: #ffffff;
 $off-white: #f8f9fa;
 $ivory: #f6f7ebff;
@@ -77,9 +81,12 @@ html::-webkit-scrollbar {
   position: fixed;
   width: 100%;
   border-bottom: 1px solid grey;
-  z-index: 1;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
 
   ul {
+
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -88,6 +95,7 @@ html::-webkit-scrollbar {
     align-items: center;
 
     a {
+
       text-decoration: none;
       color: $white;
     }
@@ -104,6 +112,10 @@ html::-webkit-scrollbar {
   background-color: white;
   border-bottom: 1px solid #eef0f3;
 
+  h1 {
+    color: $green-blue-crayola;
+  }
+
   ul {
     a {
       color: $base-font-color;
@@ -113,6 +125,83 @@ html::-webkit-scrollbar {
       color: $green-blue-crayola;
     }
   }
+}
+
+.Hamburger {
+  position: relative;
+  display: block;
+  width: 50px;
+  cursor: pointer;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.Hamburger .Bar,
+.Hamburger::after,
+.Hamburger:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: $green-blue-crayola-hover;
+  margin: 6px 35vw;
+  transition: 0.4s;
+}
+
+.is-scroll {
+  background-color: $green-blue-crayola;
+}
+
+.Hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+
+.Hamburger.is-active::after {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.Hamburger.is-active .Bar {
+  opacity: 0;
+}
+
+// Toggelable mobile menu
+.MobileNav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 5;
+  background-color: $white;
+  padding-top: 120px;
+  transition: 0.4s;
+  
+
+  a {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 20px 16px;
+    color: $green-blue-crayola-hover;
+    text-decoration: none;
+    font-size: 2.5rem;
+
+    &:hover {
+      color: $green-blue-crayola;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+.MobileNav.is-active {
+  left: 0;
 }
 
 // .About-me {}
@@ -236,7 +325,7 @@ html::-webkit-scrollbar {
   padding-top: 25px;
   background-color: $off-white;
 
-  h2{
+  h2 {
     color: $green-blue-crayola;
     padding-bottom: 10px;
     font-weight: 500;
@@ -267,6 +356,7 @@ html::-webkit-scrollbar {
   color: white;
   text-align: center;
 
+
   h3 {
     top: 5%;
     margin-left: 5%;
@@ -285,7 +375,7 @@ html::-webkit-scrollbar {
     opacity: 0;
   }
 
-  a{
+  a {
     border-radius: 8px;
     color: $white;
   }
@@ -311,6 +401,7 @@ html::-webkit-scrollbar {
     z-index: 1;
     transition: 0.75s ease-out;
     object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 
   &:hover {
@@ -330,7 +421,7 @@ html::-webkit-scrollbar {
       opacity: 1;
     }
 
-    img{
+    img {
       filter: blur(1px);
       filter: brightness(20%);
       transition: 0.5s ease-out;
@@ -370,6 +461,51 @@ html::-webkit-scrollbar {
   font-size: 1rem;
 }
 
+@media only screen and (max-width:1230px) {
+
+  .Projects-container {
+    width: 60%;
+    gap: 35px;
+  }
+
+  .Project-card {
+    height: 250px;
+    width: 90%;
+    position: relative;
+    color: white;
+    text-align: center;
+
+
+    h3 {
+      top: 5%;
+      margin-left: 5%;
+      z-index: 2;
+      position: absolute;
+      font-weight: 800;
+    }
+
+    h4 {
+      top: 20%;
+      margin-left: 5%;
+      z-index: 2;
+      position: absolute;
+      font-size: 1rem;
+    }
+
+    a {
+      border-radius: 8px;
+      color: $white;
+    }
+
+    p {
+      font-size: 1rem;
+      bottom: 10px;
+      margin-left: 6%;
+      margin-right: 5%;
+    }
+  }
+}
+
 
 @media only screen and (max-width:1000px) {
   .Banner-text {
@@ -401,12 +537,22 @@ html::-webkit-scrollbar {
     }
   }
 
-  .Navbar {
-    font-size: 0.8rem;
+  .Projects {
+    margin-top: 5%;
 
-    ul {
-      gap: 30px;
+    h2 {
+      font-size: 2rem;
     }
+  }
+
+  .Projects-container {
+    width: 75%;
+    gap: 35px;
+  }
+
+  .change {
+    display: flex;
+    justify-content: center;
   }
 
   .Profile-image {
@@ -421,15 +567,47 @@ html::-webkit-scrollbar {
     color: white;
     text-align: center;
   }
+
+  .DesktopNav {
+    display: none;
+    
+    width: 0px;
+
+    a {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  .Hamburger {
+    display: none;
+  }
+
+  .MobileNav {
+    display: none;
+  }
+
+
 }
 
 @media only screen and (max-width:500px) {
   .Navbar {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    padding: 30px 0 30px 0;
 
     ul {
       justify-content: start;
       gap: 25px;
+    }
+  }
+
+  .Projects {
+    margin-top: 50%;
+
+    h2 {
+      font-size: 1.5rem;
+      padding: 20px 0 20px 0;
     }
   }
 
