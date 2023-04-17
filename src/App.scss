@@ -101,7 +101,7 @@ html::-webkit-scrollbar {
     }
 
     a:hover {
-      color: $base-font-color;
+      color: $green-blue-crayola-hover;
     }
   }
 }
@@ -130,9 +130,9 @@ html::-webkit-scrollbar {
 .Hamburger {
   position: relative;
   display: block;
-  width: 50px;
+  width: 55px;
   cursor: pointer;
-
+  margin-left: 65%;
   appearance: none;
   background: none;
   outline: none;
@@ -143,16 +143,12 @@ html::-webkit-scrollbar {
 .Hamburger::after,
 .Hamburger:before {
   content: '';
-  display: block;
   width: 100%;
+  display: block;
   height: 5px;
   background-color: $green-blue-crayola-hover;
-  margin: 6px 35vw;
+  margin: 6px 0 6px 0;
   transition: 0.4s;
-}
-
-.is-scroll {
-  background-color: $green-blue-crayola;
 }
 
 .Hamburger.is-active:before {
@@ -179,7 +175,11 @@ html::-webkit-scrollbar {
   background-color: $white;
   padding-top: 120px;
   transition: 0.4s;
-  
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
   a {
     display: block;
@@ -193,10 +193,6 @@ html::-webkit-scrollbar {
     &:hover {
       color: $green-blue-crayola;
     }
-  }
-
-  ul {
-    list-style-type: none;
   }
 }
 
@@ -236,6 +232,12 @@ html::-webkit-scrollbar {
     p {
       font-size: 1.25rem;
     }
+  }
+}
+
+.About-me-text{
+  p{
+    margin-top: 30px;
   }
 }
 
@@ -297,6 +299,13 @@ html::-webkit-scrollbar {
   p {
     width: 99%;
     font-size: 1.3rem;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: $green-blue-crayola;
   }
 
   h3 {
@@ -429,6 +438,11 @@ html::-webkit-scrollbar {
   }
 }
 
+.Projects-header{
+  padding-top: 5vh;
+  margin: 0 auto 20px auto ;
+}
+
 .arrow {
   border: solid $base-font-color;
   border-width: 0 7px 7px 0;
@@ -524,12 +538,12 @@ html::-webkit-scrollbar {
     h2 {
       color: $green-blue-crayola;
       font-weight: 500;
-      margin-top: 40px;
+      margin-top: 50px;
+      font-size: 2.5rem;
     }
 
     .Content {
-
-      margin: 50px 20px 0 20px;
+      margin: 50px 30px 0 30px;
 
       p {
         font-size: 1.1rem;
@@ -538,11 +552,16 @@ html::-webkit-scrollbar {
   }
 
   .Projects {
-    margin-top: 5%;
+    margin-top: 0;
 
     h2 {
       font-size: 2rem;
     }
+  }
+
+  .Projects-header{
+    padding-top: 25vh;
+    margin: 0 auto 20px auto ;
   }
 
   .Projects-container {
@@ -569,11 +588,7 @@ html::-webkit-scrollbar {
   }
 
   .DesktopNav {
-    display: none;
-    
-    width: 0px;
-
-    a {
+    li {
       display: none;
     }
   }
@@ -594,7 +609,7 @@ html::-webkit-scrollbar {
 @media only screen and (max-width:500px) {
   .Navbar {
     font-size: 0.9rem;
-    padding: 30px 0 30px 0;
+    padding: 10px 0 10px 0;
 
     ul {
       justify-content: start;
@@ -603,15 +618,32 @@ html::-webkit-scrollbar {
   }
 
   .Projects {
-    margin-top: 50%;
 
     h2 {
-      font-size: 1.5rem;
-      padding: 20px 0 20px 0;
+      width: 90%;
+      font-size: 1.8rem;
     }
+  }
+
+  .Projects-header{
+    padding-top: 45vh;
+    margin: 0 auto 30px auto ;
+  }
+
+  .Project-card {
+    height: 200px;
+
   }
 
   .Profile-image {
     width: 60%;
+  }
+
+  .Contact-content {
+    width: 75%;
+
+    p {
+      font-size: 1.2rem;
+    }
   }
 }

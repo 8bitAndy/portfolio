@@ -4,14 +4,14 @@ export default function Contact({ liLink, mailLink, ghLink }: any) {
     return (
         <div className="Contact">
             <div className="Contact-content">
-                <h2>Get in touch or grab a copy of my resume!</h2>
-                <p>Must go faster. God help us, we're in the hands of engineers. What do they got in there? King Kong? This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows.
-                    Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.</p>
+                <h2 >Get in touch or grab a copy of my resume!</h2>
+                <p>Feel free to grab a copy of my resume from below or contact me via LinkedIn/email, I’m always keen to have a chat or discuss anything software related. 
+                    If you have any questions about me or any of my work don’t be afraid to strike up a conversation!</p>
                 <br />
-                <a href={process.env.PUBLIC_URL + '/SoftwareResume.pdf'} download><button id='my-portfolio' className='Button-general'>Download resume</button></a>
+                <a href={process.env.PUBLIC_URL + '/SoftwareResume.pdf'} download><button className='Button-general'>Download resume</button></a>
                 <br />
                 <br />
-                <h3 id='contact'>Contact me with one of the below</h3>
+                <h3 >Contact me with one of the below</h3>
                 <a href={liLink} target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" className="linkLogo" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />

@@ -1,11 +1,15 @@
 // Navbar component for website
 export default function Navbar() {
     // State of the hamburger menu and mobile menu
-    const burgerButton = document.querySelector('.Hamburger');
-    const mobileMenu = document.querySelector('.MobileNav')
+    var burgerButton = document.querySelector('.Hamburger');
+    var mobileMenu = document.querySelector('.MobileNav');
 
     // Deals with the opening and closing of hamburger menu, also the only time I can possibly use name a name with burger in it
     const handleBurger = () => {
+        // Get the values of the class name
+        burgerButton = document.querySelector('.Hamburger');
+        mobileMenu = document.querySelector('.MobileNav');
+        // toggle the class name status
         burgerButton?.classList.toggle('is-active');
         mobileMenu?.classList.toggle('is-active');
     }
@@ -18,10 +22,8 @@ export default function Navbar() {
     function scrollFunction() {
         if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
             document.getElementById("navbar")?.classList.add('change');
-            document.getElementById("burgerBar")?.classList.add('is-scroll');
         } else {
             document.getElementById("navbar")?.classList.remove('change')
-            document.getElementById("burgerBar")?.classList.remove('is-scroll')
         }
     }
 

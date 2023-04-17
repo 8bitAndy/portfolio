@@ -1,24 +1,24 @@
-import image from './test.jpeg';
+import image from './headshot.jpg';
 
 // Big card with info about me displayed below the banner
 export default function About() {
     return (
         <div className='About-me'>
             <div className="About-me-card">
-                <h2>About me</h2>
+                <h2 >About me</h2>
                 <div className='Content'>
                     <img src={image} className='Profile-image' />
                     <div className='About-me-text'>
+                    <br/>
                         <p>
-                            Life finds a way. So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. What do they got in there? King Kong? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
+                        Hi there! My name's Liam I'm a junior software developer based in Perth. I’m a passionate tech enthusiast and have a love for coding. Throughout my degree I’ve covered technologies such as C#, Microsoft SQL Server and ASP.NET to name a few. I’m always keen to take on a new challenge whether that be learning a new skillset or a new web framework. Currently I’m teaching myself front-end web development with React so that I can build some exciting and modern user interfaces.
                         </p>
-                        <p>
-                            Jaguar shark! So tell me - does it really exist? Did he just throw my cat out of the window? Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+                        <p id="my-portfolio">
+                        Have a look at some of my work below, by clicking on any of the tiles you will be taken to the GitHub repo for the project. I’m always keen to have a chat and get some feedback, feel free to send me an email or message!
                         </p>
                     </div>
                 </div>
-            </div>
-            <div id="my-portfolio"></div>
+            </ div>
         </div>
     )
 }

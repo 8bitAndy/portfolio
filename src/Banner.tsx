@@ -1,6 +1,4 @@
 import image from './banner.jpg';
-import App from './App';
-
 
 // Banner image with header text and a brief bio
 export default function Banner({ title, intro }: any) {
