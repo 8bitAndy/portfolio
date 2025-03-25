@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Placeholder from "./Placeholder";
 import Skills from "./Skills";
+import Contact from "./Contact";
 
 export default function ContentBody(){
     return(
@@ -9,6 +10,7 @@ export default function ContentBody(){
             <Navbar/>
             <Placeholder/>
             <Skills/>
+            <Contact/>
         </div>
     )
 }
