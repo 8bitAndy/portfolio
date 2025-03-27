@@ -1,6 +1,16 @@
 import img from './react.svg';
+import logo_csharp from './assets/c-sharp-logo.png';
+import logo_git from './assets/git-logo.png';
+import logo_python from './assets/python-logo.png';
+import logo_sql from './assets/sql-logo.png';
+import logo_javascript from './assets/javascript-logo.png';
+import logo_cpp from './assets/cpp-logo.png';
+
+
 
 export default function Skills() {
+
+
     return (
         <div className="skills-container">
             <h3>My languages and skills</h3>
@@ -8,14 +18,36 @@ export default function Skills() {
 
             <div className='tech-container'>
                 <div className="tech-row1">
-                    <img src={img} />
-                    <img src={img} />
-                    <img src={img} />
+                    <div className='skill-container'>
+                        <img src={logo_javascript} />
+                        <h2>Javascript</h2>
+                    </div>
+                    <div className='skill-container'>
+                        <img src={img} />
+                        <h2>React.js</h2>
+                    </div>
+                    <div className='skill-container'>
+                        <img src={logo_sql} />
+                        <h2>SQL</h2>
+                    </div>
                 </div>
                 <div className="tech-row2">
-                    <img src={img} />
-                    <img src={img} />
-                    <img src={img} />
+                    <div className='skill-container'>
+                        <img src={logo_python} />
+                        <h2>Python</h2>
+                    </div>
+                    <div className='skill-container'>
+                        <img src={logo_csharp} />
+                        <h2>C#</h2>
+                    </div>
+                    <div className='skill-container'>
+                        <img src={logo_git} />
+                        <h2>Git</h2>
+                    </div>
+                    <div className='skill-container'>
+                        <img src={logo_cpp} />
+                        <h2>C++</h2>
+                    </div>
                 </div>
             </div>
         </div>

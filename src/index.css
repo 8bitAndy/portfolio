@@ -113,17 +113,20 @@
 }
 
 .tech-container img{
-  width: 150px;
+  width: 125px;
   transition: 0.5s;
 }
 
 .tech-container img:hover{
-  width: 180px;
+  width: 150px;
   transition: 0.5s;
 }
 
 .tech-row1{
   margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .tech-row1 img{
@@ -131,14 +134,19 @@
 }
 
 .tech-row2{
-  margin-top: 50px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .tech-row2 img{
   margin: 0 75px 0 75px;
 }
 
+
 .contact-form-container{
+  margin-top: 125px;
   width: 100%;
 }
 
@@ -148,16 +156,31 @@
 }
 
 .contact-form{
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  
-  .label{
-    align-items: start;
-  }
-}
+  width: 80%;
+  display: inline-block;
 
+  label {
+    color: rgb(35, 155, 224);
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: block;
+    text-align: left;
+  }
+
+  input{
+    margin: 10px 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #1e1d20;
+    padding-left: 20px;
+    font-size: 1.1rem;
+  }
+
+}
 
 /* .box::before {
   content: "";

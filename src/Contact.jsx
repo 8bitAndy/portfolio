@@ -5,9 +5,10 @@ export default function Contact() {
 
             <form className="contact-form"> 
                 <label htmlFor="name">Your name</label>
-                <input type="text" id="name" placeholder="name"/>
+                <input type="text" id="name" placeholder="Your name here"/>
                 <label htmlFor="message">Enter you message below:</label>
                 <input type="text" id="message" placeholder="Your email here"></input>
+                <button>Send email</button>
 
 
             </form>
