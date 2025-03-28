@@ -4,7 +4,7 @@ export default function Navbar(){
             <li>Home</li>
             <li>My Work</li>
             <li>My Resume</li>
-            <li>Get in contact</li>
+            <li><a href="#contact">Get in contact</a></li>
         </ul>
     </>
 }
