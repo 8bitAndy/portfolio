@@ -2,7 +2,7 @@
 
 Made using React and Vite!
 
-Currently under construction
+Updated site coming soon.
 
 
 ### - Instructions for deployment:
