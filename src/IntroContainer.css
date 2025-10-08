@@ -1,0 +1,23 @@
+.header{
+    /* background-color: black; */
+}
+
+.headshot{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-right: 40px;
+}
+
+.name-title{
+    display: inline-block;
+    vertical-align: top;
+
+    h1{
+        margin: 0 0 10px 0;
+    }
+
+    h4{
+        margin: 0;
+    }
+}

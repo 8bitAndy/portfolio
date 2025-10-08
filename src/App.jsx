@@ -1,10 +1,11 @@
 import './App.css'
+import MainContent from './MainContent'
 
 function App() {
 
   return (
     <>
-    <h1>Coming soon</h1>
+    <MainContent/>
     </>
   )
 }
