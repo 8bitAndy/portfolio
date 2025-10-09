@@ -1,23 +1,71 @@
-.header{
+.header {
     /* background-color: black; */
 }
 
-.headshot{
+.headshot {
     display: inline-block;
     height: 100px;
     width: 100px;
     margin-right: 40px;
 }
 
-.name-title{
+.name-title {
     display: inline-block;
     vertical-align: top;
 
-    h1{
+    h1 {
         margin: 0 0 10px 0;
     }
 
-    h4{
+    h4 {
         margin: 0;
     }
+}
+
+.button-container{
+    margin-top: 40px;
+    height: 60px;
+    
+}
+
+.button-download {
+    color: #FFFFFF;
+    display: inline-block;
+    width: 70%;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    height: 100%;
+    background-color: #23B5D3;
+    border: none;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.button-social-link {
+    color: #FFFFFF;
+    width: 10%;
+    display: inline-block;
+    font-family: "Ubuntu", sans-serif;
+    margin-right: 15px;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: #171F26;
+    border: none;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.button-social-link:hover{
+    background-color: white;
+    color: #171F26;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-download:hover{
+    background-color: white;
+    color: #23B5D3;
+    cursor: pointer;
+    transition: 0.5s;
 }
