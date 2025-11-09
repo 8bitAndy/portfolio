@@ -1,6 +1,5 @@
-.main-column{
+.main-column {
     width: 50%;
-    /* background-color: rgb(7, 44, 77); */
     height: 1500px;
-    margin: 150px auto;
+    margin: 100px auto;
 }

@@ -1,5 +1,9 @@
 .header {
-    /* background-color: black; */
+    --berkeley-blue: #13315cff;
+    --yale-blue: #134074ff;
+    --white: #fbfcffff;
+    --claret: #820933ff;
+    --chestnut: #a53f2bff;
 }
 
 .headshot {
@@ -22,48 +26,48 @@
     }
 }
 
-.button-container{
+.button-container {
     margin-top: 40px;
     height: 60px;
-    
+
 }
 
 .button-download {
-    color: #FFFFFF;
+    color: var(--white);
     display: inline-block;
     width: 70%;
     font-family: "Ubuntu", sans-serif;
     font-size: 1.5rem;
     margin-right: 15px;
     height: 100%;
-    background-color: #23B5D3;
+    background-color: var(--claret);
     border: none;
     border-radius: 7px;
     transition: 0.5s;
 }
 
 .button-social-link {
-    color: #FFFFFF;
+    color: var(--white);
     width: 10%;
     display: inline-block;
     font-family: "Ubuntu", sans-serif;
     margin-right: 15px;
     height: 100%;
     font-size: 1.5rem;
-    background-color: #171F26;
+    background-color: var(--berkeley-blue);
     border: none;
     border-radius: 7px;
     transition: 0.5s;
 }
 
-.button-social-link:hover{
+.button-social-link:hover {
     background-color: white;
     color: #171F26;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.button-download:hover{
+.button-download:hover {
     background-color: white;
     color: #23B5D3;
     cursor: pointer;

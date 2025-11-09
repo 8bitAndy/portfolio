@@ -1,7 +1,13 @@
-html{
-  background-color: #0c151D;
-  color: #FFFFFF;
+html {
+  background-color: #00224D;
+  color: var(--white);
   font-family: "Ubuntu", sans-serif;
+
+  --berkeley-blue: #13315cff;
+  --yale-blue: #134074ff;
+  --white: #fbfcffff;
+  --claret: #820933ff;
+  --chestnut: #a53f2bff;
 }
 
 .ubuntu-regular {
@@ -9,6 +15,7 @@ html{
   font-weight: 400;
   font-style: normal;
 }
+
 
 
 /***
