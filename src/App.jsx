@@ -1,11 +1,11 @@
 import './App.css'
-import MainContent from './MainContent'
+import ComingSoon from './ComingSoon';
 
 function App() {
 
   return (
     <>
-    <MainContent/>
+    <ComingSoon></ComingSoon>
     </>
   )
 }

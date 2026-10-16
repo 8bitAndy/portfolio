@@ -8,7 +8,7 @@ export default function IntroContainer() {
                 <img src={headshot} className='headshot' />
                 <div className='name-title'>
                     <h1>Liam Andrews</h1>
-                    <h4>Junior Software Engineer</h4>
+                    <h4>Software Engineer</h4>
                 </div>
             </div>
             <p>I am a passionate software developer that loves making cool looking user interface. My experiences</p>
