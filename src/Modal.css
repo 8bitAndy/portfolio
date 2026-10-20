@@ -1,0 +1,101 @@
+/* ---------- overlay ---------- */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background: rgba(7, 10, 19, 0.7);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    animation: modal-fade 0.25s ease-out both;
+}
+
+/* ---------- card ---------- */
+
+.modal {
+    box-sizing: border-box;
+    width: min(90vw, 28rem);
+    padding: 2rem;
+    border: 1px solid rgba(140, 180, 255, 0.25);
+    border-radius: 25px;
+    background: rgba(12, 21, 29, 0.95);
+    color: #e8ecf7;
+    font-family: "Ubuntu", sans-serif;
+    text-align: left;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    animation: modal-rise 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.modal-title {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    background: linear-gradient(100deg, #48f7b3 0%, #5684f8 45%, #6de3d0 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.modal-message {
+    margin: 0 0 1.5rem 0;
+    color: #97a4c4;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ---------- OK button ---------- */
+
+.modal-close {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #9db8ff, #6de3d0);
+    color: #070a13;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.modal-close:hover {
+    box-shadow: 0 0 20px rgba(109, 227, 208, 0.35);
+}
+
+.modal-close:focus-visible {
+    outline: 2px solid #9db8ff;
+    outline-offset: 3px;
+}
+
+/* ---------- animation ---------- */
+
+@keyframes modal-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes modal-rise {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .modal-overlay,
+    .modal {
+        animation: none;
+    }
+}

@@ -15,7 +15,7 @@ export interface Volunteering{
 }
 
 export interface PortfolioContent{
-    introduction: {about: string; email: string};
-    experiences: Record<number, Experience>;
+    introduction: {about: string; about2: string; email: string};
+    experiences: Record<string, Experience>;
     volunteering: Record<number, Volunteering>;
 }

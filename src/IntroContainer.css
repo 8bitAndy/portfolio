@@ -47,10 +47,12 @@
 
 .button-container {
   display: flex;
-  align-content: right;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
   gap: 0.75rem;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
+
 }
 
 .button-download {
@@ -91,3 +93,36 @@
   color: #ffffff;
 }
 
+
+/* ---------- second intro paragraph ---------- */
+
+.intro-container .intro-about2 {
+  margin-top: 0.5rem;
+}
+
+/* ---------- intro text alignment and button spacing ---------- */
+
+/* Left-align the intro text, which was centred by the Coming Soon wrapper */
+.intro-container {
+  text-align: left;
+}
+
+/* Scoped so it beats the shared .button-container rule in Experiences.css */
+.intro-container .button-container {
+  margin-top: 1.5rem;
+}
+
+/* ---------- optical alignment of name ---------- */
+
+/* Pulls the large "L" back so its edge lines up with the text below */
+.intro-container .intro-name {
+  margin-left: -0.05em;
+}
+
+/* ---------- link buttons ---------- */
+
+.intro-container .button-container a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}

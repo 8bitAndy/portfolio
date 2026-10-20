@@ -1,31 +1,37 @@
-// Component will read in JSON file of previous work experiences and dynamically create
-// a vertical list of past work and jobs on portolio site.
+// Shows past work and jobs, newest first.
 import './Experiences.css'
-import type { PortfolioContent } from './types';
+import type { Experience } from './types';
 
+type Props = {
+    experiences?: Record<string, Experience>;
+};
 
-
-// Loop through the array of JSON objects and render each as a unique component
-export default function Experiences() {
-    //     // Loop through array of objects and generate an instance of a job or past experience
-    //     const experienceList = testData.map(record => <div key={record.id}>
-    //         <h2>{record.title}</h2>
-    //         <h3>{record.company}</h3>
-    //         <p>{record.skills}</p>
-    //         <p>{record.content}</p>
-    //         <br />
-    //         <br />
-    //     </div>
-    //     );
+export default function Experiences({ experiences }: Props) {
+    // Turn the object into a list, newest first.
+    const sorted = experiences
+        ? Object.values(experiences).sort((a, b) => b.date - a.date)
+        : [];
 
     return (
         <div className="">
             <h1 className="exp-title">Experience</h1>
-            <span className="intro-container">
-
+            <span className="exp-container">
+                {sorted.map((job) => (
+                    <div key={job.id} className="exp-item">
+                        <h3 className="exp-role">{job.title}</h3>
+                        <div className="exp-meta">
+                            <span className="exp-company">{job.company}</span>
+                            <span className="exp-date">{job.date}</span>
+                        </div>
+                        <ul className="exp-skills">
+                            {job.skills.split(",").map((skill) => (
+                                <li key={skill} className="exp-skill">{skill.trim()}</li>
+                            ))}
+                        </ul>
+                        <p className="exp-content">{job.content}</p>
+                    </div>
+                ))}
             </span>
-            {/* {experienceList} */}
-
         </div>
     )
 }

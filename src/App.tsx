@@ -1,7 +1,9 @@
 import './App.css'
 import IntroContainer from './IntroContainer';
 import Experiences from './Experiences';
-import { useEffect, useRef } from "react";
+import Contact from './Contact';
+import { useEffect, useRef, useState } from "react";
+import type { PortfolioContent } from "./types";
 import "./ComingSoon.css";
 
 type Particle = {
@@ -17,6 +19,18 @@ type Particle = {
 // Content and components should be added in the return statment
 function App() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+
+  // Null until content is loaded.
+  const [content, setContent] = useState<PortfolioContent | null>(null);
+
+  // Single fetch for the whole page.
+  useEffect(() => {
+    fetch('/data.json')
+      .then((r) => r.json() as Promise<PortfolioContent>)
+      .then(setContent)
+      .catch(() => setContent(null));
+  }, []);
+
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -111,13 +125,9 @@ function App() {
       />
 
       <div className="coming-soon__content">
-        <IntroContainer/>
-        <Experiences/>
-        <h1 className="coming-soon__title">Get in contact!</h1>
-
-        <p className="coming-soon__subtitle">
-          New portfolio site on its way! Check back soon.
-        </p>
+        <IntroContainer introduction={content?.introduction} />
+        <Experiences experiences={content?.experiences} />
+        <Contact />
 
         <div className="coming-soon__dots" aria-hidden="true">
           <span />

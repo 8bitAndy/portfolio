@@ -94,3 +94,96 @@
     background: rgba(140, 180, 255, 0.14);
     color: #ffffff;
 }
+
+/* ---------- experience list ---------- */
+
+.exp-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(140, 180, 255, 0.15);
+}
+
+.exp-item:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+
+.exp-role {
+    margin: 0;
+    color: #fbfcff;
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.exp-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 1rem;
+    color: #9fb0d8;
+    font-size: 0.95rem;
+}
+
+.exp-company {
+    color: #9db8ff;
+    font-weight: 600;
+}
+
+.exp-date {
+    letter-spacing: 0.08em;
+}
+
+.exp-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.25rem 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.exp-skill {
+    padding: 0.25rem 0.75rem;
+    border: 1px solid rgba(140, 180, 255, 0.25);
+    border-radius: 999px;
+    background: rgba(140, 180, 255, 0.06);
+    color: #9fb0d8;
+    font-size: 0.8rem;
+}
+
+
+/* ---------- experience text alignment and hierarchy ---------- */
+
+.exp-item {
+    text-align: left;
+}
+
+.exp-role {
+    font-size: clamp(1.2rem, 2.4vw, 1.5rem);
+}
+
+/* Two classes so this beats the shared .exp-container p rule */
+.exp-container .exp-content {
+    margin: 0.25rem 0 0 0;
+    max-width: 60ch;
+    color: #97a4c4;
+    font-size: clamp(0.95rem, 2.6vw, 1.125rem);
+    line-height: 1.6;
+}
+
+/* ---------- description uses full container width ---------- */
+
+.exp-container .exp-content {
+    max-width: none;
+    width: 100%;
+}
+
+/* ---------- space between experiences ---------- */
+
+.exp-container .exp-item + .exp-item {
+    margin-top: 1.5rem;
+}

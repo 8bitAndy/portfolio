@@ -2,36 +2,77 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Portfolio content",
   "type": "object",
-  "required": ["introduction", "experiences"],
+  "required": [
+    "introduction",
+    "experiences"
+  ],
   "additionalProperties": false,
   "properties": {
-    "$schema": { "type": "string" },
+    "$schema": {
+      "type": "string"
+    },
     "introduction": {
       "type": "object",
-      "required": ["about", "email"],
+      "required": [
+        "about",
+        "about2",
+        "email"
+      ],
       "additionalProperties": false,
       "properties": {
-        "about": { "type": "string" },
-        "email": { "type": "string", "format": "email" }
+        "about": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "about2": {
+          "type": "string"
+        }
       }
     },
     "experiences": {
       "type": "object",
-      "additionalProperties": { "$ref": "#/$defs/experience" }
+      "additionalProperties": {
+        "$ref": "#/$defs/experience"
+      }
     }
   },
   "$defs": {
     "experience": {
       "type": "object",
-      "required": ["id", "title", "company", "date", "skills", "content"],
+      "required": [
+        "id",
+        "title",
+        "company",
+        "date",
+        "skills",
+        "content"
+      ],
       "additionalProperties": false,
       "properties": {
-        "id": { "type": "integer" },
-        "title": { "type": "string" },
-        "company": { "type": "string" },
-        "date": { "type": ["integer", "string"] },
-        "skills": { "type": "string" },
-        "content": { "type": "string" }
+        "id": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "company": {
+          "type": "string"
+        },
+        "date": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "skills": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        }
       }
     }
   }

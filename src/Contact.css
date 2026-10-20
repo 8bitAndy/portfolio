@@ -1,0 +1,110 @@
+/* ---------- title (same as .exp-title) ---------- */
+
+.contact-title {
+    display: flex;
+    align-items: flex-start;
+    font-size: clamp(2rem, 10vw, 4rem);
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -0.03em;
+    background: linear-gradient(100deg, #48f7b3 0%, #5684f8 45%, #6de3d0 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    animation: coming-soon-shimmer 6s ease-in-out infinite;
+    margin: 2rem 0 1rem 0;
+}
+
+/* ---------- layout ---------- */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Matches .exp-container: its 2rem padding and 1px border sit outside the width */
+    width: calc(min(80vw, 90rem) + 4rem + 2px);
+    text-align: left;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    border: 1px solid rgba(140, 180, 255, 0.25);
+    border-radius: 25px;
+    background: rgba(140, 180, 255, 0.06);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* ---------- fields ---------- */
+
+.contact-label {
+    color: #9fb0d8;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.contact-input {
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(140, 180, 255, 0.25);
+    border-radius: 15px;
+    background: rgba(7, 10, 19, 0.5);
+    color: #e8ecf7;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-input:focus {
+    outline: none;
+    border-color: #9db8ff;
+    box-shadow: 0 0 0 3px rgba(157, 184, 255, 0.2);
+}
+
+.contact-textarea {
+    min-height: 10rem;
+    resize: vertical;
+}
+
+/* ---------- submit button ---------- */
+
+.contact-submit {
+    align-self: flex-start;
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #9db8ff, #6de3d0);
+    color: #070a13;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-submit:hover {
+    box-shadow: 0 0 20px rgba(109, 227, 208, 0.35);
+}
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 1.25rem;
+    }
+}

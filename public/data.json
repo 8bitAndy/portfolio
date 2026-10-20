@@ -1,7 +1,8 @@
 {
     "$schema": "./content.schema.json",
     "introduction": {
-        "about": "I am a software engineer with 3 years of experience in development and testing.",
+        "about": "I'm a software engineer with 3 years of experience in development and testing I take pride in building things that work well and look good. I have a broad range of experience across project planning, development, manual/automated testing and release management.",
+        "about2": "I pride myself on not creating rubbish software, so I understand a project from the first line of code through to delivery. I enjoy solving tecnical problems and learning new technologies however I get the most satisfaction working with teams of great people and making life long connections with those I work with.",
         "email": "liamandrews@outlook.com"
     },
     "experiences": 
@@ -11,24 +12,24 @@
             "title": "Software Engineer",
             "company": "Jonas Software",
             "date": 2026,
-            "skills": "AI development, skill 2",
-            "content": "Full stack development working with legacy and greenfield projects."
+            "skills": "Full-Stack Development, C#, VB.NET, SQL, Migration Development, AI development",
+            "content": "I work as a full stack developer on both legacy and greenfield projects. I’m comfortable moving between older code and fresh exciting new stuff. Lately I’ve been using AI driven development orchestrating numerous agents to make some incredible new things!"
         },
         "experience2": {
             "id": 2,
             "title": "Software Engineering Analyst",
             "company": "Accenture",
             "date": 2025,
-            "skills": "SQL, Javascript, Web Development, Java, Selenium, Project management",
-            "content": "Software development and testing on large project teams."
+            "skills": "Web Development, SQL, Javascript, Java, Selenium, Integration Testing",
+            "content": "I built and tested software as part of large project teams, which taught me how much careful testing matters.  I worked with some incredible people and helped to setup the Accenture Ballarat office from scratch, an amazing experience I'm all the better for having been apart of. The role gave me solid experience working with Java, SQL, Java, JavaScript, and Selenium in industry settings."
         },
         "experience3": {
             "id": 3,
             "title": "Software Developer Intern",
             "company": "Diversus",
             "date": 2023,
-            "skills": "Front end web development, React, Next.js, C#, SQL, Sitecore CMS",
-            "content": "Development of website front ends using cool technologies and libraries."
+            "skills": "Front-End Web development, Typescript, React, Next.js, C#, SQL, Sitecore CMS",
+            "content": "My internship with Diversus was an incredible opportunity where I was paid to learn amongst some wonderful personalities and experience a welcoming and inclusive environment I don't think can ever be beaten! This was where I started building front end websites with React, Next.js, and Sitecore CMS. It’s where I first got hooked on making interfaces that look good and work well and where I first broke a production release (well only for an hour or two!)."
         }
     } 
 }

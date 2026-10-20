@@ -1,18 +1,25 @@
-import { useEffect, useState } from "react";
 import './IntroContainer.css'
 import type { PortfolioContent } from './types';
 
-export default function IntroContainer() {
-    // Will be null until content is loaded.
-    const [content, setContent] = useState<PortfolioContent | null>(null);
+type Props = {
+    introduction?: PortfolioContent['introduction'];
+};
 
-    // Fetches json data after page first renders.
-    useEffect(() => {
-        fetch('/data.json')
-            .then((r) => r.json() as Promise<PortfolioContent>)
-            .then(setContent)
-            .catch(() => setContent(null));
-    }, []);
+const RESUME_FILE = 'Liam Andrews Resume.pdf';
+const RESUME_URL = `/${encodeURIComponent(RESUME_FILE)}`;
+const LINKEDIN_URL = 'https://www.linkedin.com/in/liam-c-andrews';
+const GITHUB_URL = 'https://github.com/8bitAndy';
+
+export default function IntroContainer({ introduction }: Props) {
+    // Open the resume in a new tab and download a copy
+    const handleResumeClick = () => {
+        window.open(RESUME_URL, '_blank', 'noopener,noreferrer');
+
+        const link = document.createElement('a');
+        link.href = RESUME_URL;
+        link.download = RESUME_FILE;
+        link.click();
+    };
 
     return (
         <div>
@@ -20,11 +27,12 @@ export default function IntroContainer() {
                 <h1 className="intro-name">Liam Andrews</h1>
                 <h4>Software Engineer</h4>
 
-                <p>{content?.introduction.about}</p>
+                <p>{introduction?.about}</p>
+                <p className="intro-about2">{introduction?.about2}</p>
                 <div className='button-container'>
-                    <button className='button-download'>Download Resume</button>
-                    <button className='button-social-link-linkedin'>LinkedIn</button>
-                    <button className='button-social-link-github'>Github</button>
+                    <button className='button-download' onClick={handleResumeClick}>Download Resume</button>
+                    <a className='button-social-link-linkedin' href={LINKEDIN_URL} target='_blank' rel='noopener noreferrer'>LinkedIn</a>
+                    <a className='button-social-link-github' href={GITHUB_URL} target='_blank' rel='noopener noreferrer'>Github</a>
                 </div>
             </span>
 
