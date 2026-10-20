@@ -1,8 +1,8 @@
 {
     "$schema": "./content.schema.json",
     "introduction": {
-        "about": "I'm a software engineer with 3 years of experience in development and testing I take pride in building things that work well and look good. I have a broad range of experience across project planning, development, manual/automated testing and release management.",
-        "about2": "I pride myself on not creating rubbish software, so I understand a project from the first line of code through to delivery. I enjoy solving tecnical problems and learning new technologies however I get the most satisfaction working with teams of great people and making life long connections with those I work with.",
+        "about": "I'm a software engineer with 3 years of experience in development and testing. I take pride in building things that work well and look good. I have a broad range of experience across project planning, development, manual and automated testing and release management.",
+        "about2": "I pride myself on not creating rubbish software, so I understand a project from the first line of code through to delivery. I enjoy solving technical problems and learning new technologies, however I get the most satisfaction working with teams of great people and making lifelong connections with those I work with.",
         "email": "liamandrews@outlook.com"
     },
     "experiences": 
@@ -13,7 +13,7 @@
             "company": "Jonas Software",
             "date": 2026,
             "skills": "Full-Stack Development, C#, VB.NET, SQL, Migration Development, AI development",
-            "content": "I work as a full stack developer on both legacy and greenfield projects. I’m comfortable moving between older code and fresh exciting new stuff. Lately I’ve been using AI driven development orchestrating numerous agents to make some incredible new things!"
+            "content": "I work as a full-stack developer on both legacy and greenfield projects. I'm comfortable moving between older code and fresh exciting new stuff. Lately I've been using AI-driven development orchestrating numerous agents to make some incredible new things!"
         },
         "experience2": {
             "id": 2,
@@ -21,15 +21,15 @@
             "company": "Accenture",
             "date": 2025,
             "skills": "Web Development, SQL, Javascript, Java, Selenium, Integration Testing",
-            "content": "I built and tested software as part of large project teams, which taught me how much careful testing matters.  I worked with some incredible people and helped to setup the Accenture Ballarat office from scratch, an amazing experience I'm all the better for having been apart of. The role gave me solid experience working with Java, SQL, Java, JavaScript, and Selenium in industry settings."
+            "content": "I built and tested software as part of large project teams, which taught me how much careful testing matters. I worked with some incredible people and helped set up the Accenture Ballarat office from scratch, an amazing experience I'm all the better for having been a part of. The role gave me solid experience working with Java, SQL, JavaScript, and Selenium in industry settings."
         },
         "experience3": {
             "id": 3,
             "title": "Software Developer Intern",
             "company": "Diversus",
             "date": 2023,
-            "skills": "Front-End Web development, Typescript, React, Next.js, C#, SQL, Sitecore CMS",
-            "content": "My internship with Diversus was an incredible opportunity where I was paid to learn amongst some wonderful personalities and experience a welcoming and inclusive environment I don't think can ever be beaten! This was where I started building front end websites with React, Next.js, and Sitecore CMS. It’s where I first got hooked on making interfaces that look good and work well and where I first broke a production release (well only for an hour or two!)."
+            "skills": "Front-End Web Development, TypeScript, React, Next.js, C#, SQL, Sitecore CMS",
+            "content": "My internship with Diversus was an incredible opportunity where I was paid to learn amongst some wonderful people and experience a welcoming and inclusive environment that I don't think can ever be beaten! This was where I started building front end websites with React, Next.js, and Sitecore CMS. It's where I first got hooked on making interfaces that look good and work well and where I first broke a production release (well only for an hour or two!)."
         }
     } 
 }

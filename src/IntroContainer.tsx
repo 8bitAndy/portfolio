@@ -23,9 +23,9 @@ export default function IntroContainer({ introduction }: Props) {
 
     return (
         <div>
+            <h1 className="exp-title">Liam Andrews</h1>
             <span className="intro-container">
-                <h1 className="intro-name">Liam Andrews</h1>
-                <h4>Software Engineer</h4>
+                <h3 className="exp-role">Software Engineer</h3>
 
                 <p>{introduction?.about}</p>
                 <p className="intro-about2">{introduction?.about2}</p>
@@ -35,7 +35,6 @@ export default function IntroContainer({ introduction }: Props) {
                     <a className='button-social-link-github' href={GITHUB_URL} target='_blank' rel='noopener noreferrer'>Github</a>
                 </div>
             </span>
-
         </div>
     )
 }
