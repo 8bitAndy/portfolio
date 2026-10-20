@@ -1,27 +1,5 @@
-html {
-  background-color: #00224D;
-  color: var(--white);
-  font-family: "Ubuntu", sans-serif;
-
-  --berkeley-blue: #13315cff;
-  --yale-blue: #134074ff;
-  --white: #fbfcffff;
-  --claret: #820933ff;
-  --chestnut: #a53f2bff;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
-
-.ubuntu-regular {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-
-/***
- Rich black = 0C151D
- White = FFFFFF
- Rich black = 171F26
- Pacific cyan = 23B5D3
- Cardinal = AD343E
-***/

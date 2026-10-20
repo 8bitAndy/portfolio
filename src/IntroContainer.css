@@ -1,75 +1,93 @@
-.header {
-    --berkeley-blue: #13315cff;
-    --yale-blue: #134074ff;
-    --white: #fbfcffff;
-    --claret: #820933ff;
-    --chestnut: #a53f2bff;
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  width: min(80vw, 90rem);
+  border: 1px solid rgba(140, 180, 255, 0.25);
+  border-radius: 25px;
+  background: rgba(140, 180, 255, 0.06);
+  color: #e8ecf7;
+  font-family: "Ubuntu", sans-serif;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
-.headshot {
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    margin-right: 40px;
+.intro-name {
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+
+  background: #ffffff;
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
-.name-title {
-    display: inline-block;
-    vertical-align: top;
+.intro-container h4 {
+  margin: 0;
+  color: #9fb0d8;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
 
-    h1 {
-        margin: 0 0 10px 0;
-    }
-
-    h4 {
-        margin: 0;
-    }
+.intro-container p {
+  margin: 0;
+  color: #97a4c4;
+  font-size: clamp(0.95rem, 2.6vw, 1.125rem);
+  line-height: 1.6;
 }
 
 .button-container {
-    margin-top: 40px;
-    height: 60px;
-
+  display: flex;
+  align-content: right;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 .button-download {
-    color: var(--white);
-    display: inline-block;
-    width: 70%;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1.5rem;
-    margin-right: 15px;
-    height: 100%;
-    background-color: var(--claret);
-    border: none;
-    border-radius: 7px;
-    transition: 0.5s;
-}
-
-.button-social-link {
-    color: var(--white);
-    width: 10%;
-    display: inline-block;
-    font-family: "Ubuntu", sans-serif;
-    margin-right: 15px;
-    height: 100%;
-    font-size: 1.5rem;
-    background-color: var(--berkeley-blue);
-    border: none;
-    border-radius: 7px;
-    transition: 0.5s;
-}
-
-.button-social-link:hover {
-    background-color: white;
-    color: #171F26;
-    cursor: pointer;
-    transition: 0.5s;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #9db8ff, #6de3d0);
+  color: #070a13;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .button-download:hover {
-    background-color: white;
-    color: #23B5D3;
-    cursor: pointer;
-    transition: 0.5s;
+  box-shadow: 0 0 20px rgba(109, 227, 208, 0.35);
 }
+
+.button-social-link-linkedin,
+.button-social-link-github {
+  padding: 0.9rem 1.4rem;
+  border: 1px solid rgba(140, 180, 255, 0.25);
+  border-radius: 15px;
+  background: rgba(140, 180, 255, 0.06);
+  color: #9fb0d8;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button-social-link-linkedin:hover,
+.button-social-link-github:hover {
+  border-color: rgba(140, 180, 255, 0.6);
+  background: rgba(140, 180, 255, 0.14);
+  color: #ffffff;
+}
+

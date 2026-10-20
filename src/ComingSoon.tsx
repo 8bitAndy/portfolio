@@ -109,7 +109,7 @@ export default function ComingSoon() {
         <h1 className="coming-soon__title">Coming Soon</h1>
 
         <p className="coming-soon__subtitle">
-          New portfolio site on it's way! Check back soon.
+          New portfolio site on its way! Check back soon.
         </p>
 
         <div className="coming-soon__dots" aria-hidden="true">
